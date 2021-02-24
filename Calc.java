@@ -1,8 +1,6 @@
 package myfirstproject;
 import java.util.Scanner;
 
-
-1)
 public class Calc
 {
 	public static void main(String[] args)
