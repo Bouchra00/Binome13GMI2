@@ -29,7 +29,7 @@ public class Exercice5 {
   
   
     public static void main(String[] args) {
-        String [] test = { "0","1","2"};
+        String [] test = { "0","1","2","10"};
         System.out.println(SommeTab(TabStr2TabInt(test)));
 
     }
