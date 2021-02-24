@@ -9,9 +9,10 @@ public class Exercice5 {
 
     public static int[] TabStr2TabInt(String[] tab) {
 
-        int[] res = new int[tab.length];
-        for(int i =0; i < tab.length; i++) {
-            res[i] = Integer.parseInt(tab[i]);
+        int[] res = new int[tab.length]; // initialise tableau vide
+        
+        for(int i =0; i < tab.length; i++) { // pour toute les case du tableau
+            res[i] = Integer.parseInt(tab[i]); // on colle le string converti en entier
         }
         return res;
     }
@@ -20,17 +21,18 @@ public class Exercice5 {
    //somme de ceux- ci
     public static int SommeTab(int[] tab) {
 
-        int res = 0;
-        for (int x : tab)  {
-            res += x;
+        int res = 0; // initialse resultat à 0
+        for (int x : tab)  { // pour chaq entier du tableau
+            res += x; // on l'additionne au resultat
         }
-        return res;
+        return res; // on retourne ça
     }
   
   
     public static void main(String[] args) {
-        String [] test = { "0","1","2","10"};
-        System.out.println(SommeTab(TabStr2TabInt(test)));
+        
+        String [] test = { "0","1","2","10"}; 
+        System.out.println(SommeTab(TabStr2TabInt(test))); // affiche la somme des element de tab
 
     }
 }
