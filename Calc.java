@@ -1,4 +1,4 @@
-package myfirstproject;
+package monpremierprojet;
 import java.util.Scanner;
 
 public class Calc
