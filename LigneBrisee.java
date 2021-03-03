@@ -66,10 +66,17 @@ public int nbPoints() {
 }
 	
 	
-			
+public int nbMaxPoints() {
+	int compteur=0;
+	
+	for (Point pt: points)
+		if (pt==null)
+			compteur++;
+	return compteur;
+}			
 			
 	
-}
+
 
 
 }
