@@ -61,6 +61,8 @@ public int nbPoints() {
 	int nb=0;
 	
 	for (Point pt: points)
+		if (pt.equals(null))
+			break;
 		nb++;
 	return nb;
 }
