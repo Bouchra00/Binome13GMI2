@@ -5,8 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Rational a = new Rational(3,2);
-        System.out.println("a : " + a);
+        Rational x = new Rational(3,2);
+        System.out.println("x : " + x);
         /*
         Rational z = new Rational(3,0);
         System.out.println(z); // Q3 : à ce stade ou on peut creer un rationnel de dénominateur égal à 0. C'est un pb
@@ -15,17 +15,46 @@ public class Main {
         System.out.println("y : " + y);
 
         // Q5
-       // a.mult(y);
-       // System.out.println("a*y : " + a);
+       // x.mult(y);
+       // System.out.println("x*y : " + x);
         // Q6
-        a.add(y); // a = a + y
-        System.out.println("a+y : " + a);
+        x.add(y); // x = x + y
+        System.out.println("x+y : " + x);
         //Q7
-        Rational r = new Rational(5,10);
-        System.out.println("r : " + r);
-        r.reduce();
-        System.out.println("r (reduced) : " + r);
+        Rational z = new Rational(5,10);
+        System.out.println("z : " + z);
+        z.reduce();
+        System.out.println("z (reduced) : " + z);
 
+        // Q8
+        Vector u = new Vector(new Rational[] {x,y}); // initialiser vector u avec un tableau de rationel contenant x,y
+        System.out.println("u : " + u);
+
+        // Q9
+        u.set(1,z);
+        System.out.println("u (after change): " + u);
+
+        System.out.println("--------------\n *** Question 9.b : ");
+        Vector v = new Vector(new Rational[] {new Rational(0,1),new Rational(0,1)});
+        System.out.println("v : " + v);
+        Rational a = new Rational(2,3);
+        v.set(0,a); // le premier élement du vecteur est à l'indice 0
+        System.out.println("v (after change) : " + v);
+        Rational b = new Rational(3,2);
+        a.mult(b);
+        System.out.println("v (after change) : " + v);
+        // on observe que le premier élement de v a été modifié via la var a (ça doit etre une histoire de pointeur)
+        // c'est pas un pb,
+        // On constate aussi on peut optimiser le 'problème" en ajoutant des conditions d'affichage en améliorant la fct toString()
+
+        System.out.println("--------------\n *** Question 9.d : ");
+        Vector vv = new Vector(new Rational[] {new Rational(1,2),new Rational(1,2)});
+        System.out.println("v : " + vv);
+        Rational aa = vv.get(0);
+        aa.mult(new Rational(1,3));
+        System.out.println("v : " + vv);
+
+        // On constate
 
     }
 }
