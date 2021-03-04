@@ -1,5 +1,7 @@
 package com.saidsalimokadmiri;
 
+
+
 public class Rational {
 
 
@@ -26,4 +28,31 @@ public class Rational {
         this.den *= f2.den;
 
     }
+
+
+    // Question 6
+    public void add(Rational f2) { // a/b + c/d == (ad + cb) / bd
+
+        this.num = this.num*f2.den + f2.num*this.den;
+        this.den *= f2.den;
+
+    }
+// Question 7
+    public int pgcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return pgcd(b,(a % b));
+        }
+    }
+
+    public void reduce() { // a/b + c/d == (ad + cb) / bd
+        int p = pgcd(this.num,this.den);
+        this.num = this.num / p;
+        this.den = this.den / p;
+
+    }
+
+
+
 }
