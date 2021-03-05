@@ -1,5 +1,6 @@
 package saidsalimokadmiri;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class LigneBrisee {
     private Point[] points;
@@ -15,7 +16,7 @@ public class LigneBrisee {
     }
     @Override
     public String toString() {
-        return "Liste des points de la ligne = " + Arrays.toString(this.points);
+        return Arrays.toString(this.points);
     }
 
     public boolean contientPoint(Point p) {
@@ -49,9 +50,39 @@ int n = this.points.length;
         }
 
     }
-public int nbPoints() {
-        return this.points.length;
-}
+    public int nbPoints() {
+            return this.points.length;
+    }
+    public int nbMaxPoints() {
+        int s = 0;
+        for(Point x : this.points) {
+            if (x==null) {
+                s++;
+            }
+        }
+        return s;
+    }
+
+    public void deletePoint(Point p) {
+
+
+        if (this.contientPoint(p)) {
+            int n  = this.nbPoints() - 1;
+            if (n < 2) n = 2;
+
+            Point[] copy = new Point[n];
+            int k = 0;
+            for(Point x : this.points) {
+                if (!x.equals(p) && x != null)
+                {
+                    copy[k] =  x;
+                            k++;
+                }
+            }
+            this.points = copy;
+        }
+
+    }
 
 
 
