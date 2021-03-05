@@ -26,7 +26,7 @@ public class Rational {
     public void mult(Rational f2) {
         this.num *= f2.num;
         this.den *= f2.den;
-
+        this.reduce();
     }
 
 
@@ -35,7 +35,7 @@ public class Rational {
 
         this.num = this.num*f2.den + f2.num*this.den;
         this.den *= f2.den;
-
+        this.reduce();
     }
 // Question 7
     public int pgcd(int a, int b) {

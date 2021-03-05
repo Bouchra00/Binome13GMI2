@@ -41,5 +41,23 @@ public class Vector {
 
         return this.vec[i];
     }
+    // Question 10
+    public void mult(Rational r) { // Q10.a
+
+        for(int i = 0; i < this.vec.length; i++) {
+            this.vec[i].mult(r);
+        }
+
+    }
+    public void addV(Vector u) { // Q10.b
+        if(this.vec.length != u.vec.length) {
+            throw new java.lang.Error("le vecteur passé en paramètre n’est pas de même dimension");
+        }
+
+        for(int i = 0; i < this.vec.length; i++) {
+            this.vec[i].add(u.vec[i]);
+        }
+
+    }
 
 }

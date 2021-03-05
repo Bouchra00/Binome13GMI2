@@ -15,22 +15,27 @@ public class Main {
         System.out.println("y : " + y);
 
         // Q5
+        System.out.println("--------------\n *** Question 5 : ");
        // x.mult(y);
        // System.out.println("x*y : " + x);
         // Q6
+        System.out.println("--------------\n *** Question 6 : ");
         x.add(y); // x = x + y
         System.out.println("x+y : " + x);
         //Q7
+        System.out.println("--------------\n *** Question 7 : ");
         Rational z = new Rational(5,10);
         System.out.println("z : " + z);
         z.reduce();
         System.out.println("z (reduced) : " + z);
 
         // Q8
+        System.out.println("--------------\n *** Question 8 : ");
         Vector u = new Vector(new Rational[] {x,y}); // initialiser vector u avec un tableau de rationel contenant x,y
         System.out.println("u : " + u);
 
         // Q9
+        System.out.println("--------------\n *** Question 9 : ");
         u.set(1,z);
         System.out.println("u (after change): " + u);
 
@@ -53,8 +58,16 @@ public class Main {
         Rational aa = vv.get(0);
         aa.mult(new Rational(1,3));
         System.out.println("v : " + vv);
-
         // On constate
+        System.out.println("--------------\n *** Question 10 : ");
+        Vector v0 = new Vector(new Rational[] {new Rational(2,3),new Rational(1,2)});
+        System.out.println("v0 : " + v0);
+        v0.mult(new Rational(1,2));
+        System.out.println("(v0 = v0*1/2) v0 : " + v0);
+        Vector v1 = new Vector(new Rational[] {new Rational(3,3),new Rational(1,2)});
+        System.out.println("v1 : " + v1);
+        v0.addV(v1);
+        System.out.println("(v0 = v0+v1) v0 : " + v0);
 
     }
 }
