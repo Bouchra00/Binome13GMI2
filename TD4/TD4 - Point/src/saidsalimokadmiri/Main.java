@@ -3,7 +3,7 @@ package saidsalimokadmiri;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	/* A & B
         Point p1 = new Point(2,3);
         Point p2 = p1;
         Point p3 = new Point(2,3);
@@ -32,5 +32,22 @@ public class Main {
         ligne.deletePoint(c);
         System.out.println(" ------\n * ligne 1 " + ligne);
         System.out.println(" * ligne 2 " + ligne2);
+
+	 */
+        Rectangle rec = new Rectangle("Rouge",2,5);
+        Rectangle rec2 = new Rectangle("Rouge",2,5);
+        System.out.println(rec);
+        System.out.println(rec.equals(rec2));
+        Cercle c = new Cercle("Rouge",2);
+        Cercle c2 = new Cercle("Rouge",2);
+        System.out.println(c);
+        System.out.println(c.equals(c2));
+        Carre car = new Carre("Rouge",5);
+        Carre car2 = new Carre("Rouge",5);
+        System.out.println(car);
+        System.out.println(car.equals(car2));
+
+
     }
+
 }

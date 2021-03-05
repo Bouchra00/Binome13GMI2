@@ -10,6 +10,14 @@ public abstract class Figure {
         this.couleur = couleur;
     }
 
+    @Override
+    public String toString() {
+        return "Figure{" +
+                "nom='" + nom + '\'' +
+                ", couleur='" + couleur + '\'' +
+                '}';
+    }
+
     public abstract double perimetre();
     public abstract double surface();
 

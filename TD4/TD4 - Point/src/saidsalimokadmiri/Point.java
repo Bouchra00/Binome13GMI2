@@ -6,7 +6,7 @@ public class Point {
 
     private int x;
     private int y;
-private static int compteur = 0;
+    private static int compteur = 0;
 
     public Point(int x, int y) {
         this.x = x;
