@@ -1,1 +1,2 @@
-[Mlamali SAID SALIMO](https://www.linkedin.com/in/mlamalisaidsalimo) & [Bouchra Kadmiri](https://www.linkedin.com/in/bouchra-kadmiri-67bb87159)
+### JAVA TPs Tds - Binome13GMI2 
+[Mlamali SAID SALIMO](https://www.linkedin.com/in/mlamalisaidsalimo) et [Bouchra Kadmiri](https://www.linkedin.com/in/bouchra-kadmiri-67bb87159)
