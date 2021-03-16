@@ -31,6 +31,10 @@ public class LigneBriseeArrayList {
         LigneBriseeArrayList.taille = taille;
     }
 
+    public LigneBriseeArrayList() {
+        this.liste2Points = new ArrayList<Point>();
+    }
+
     @Override
     public String toString() {
         return "LigneBriseeArrayList{" +
