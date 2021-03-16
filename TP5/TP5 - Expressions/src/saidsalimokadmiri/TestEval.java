@@ -2,7 +2,7 @@ package saidsalimokadmiri;
 
 public class TestEval {
     public static void main(){
-        Env env=new Env(7);
+        Env env=new Env();
         env.associer("y", (double) 2);
         env.associer("x", (double) 1);
         env.associer("a", (double) 9);
